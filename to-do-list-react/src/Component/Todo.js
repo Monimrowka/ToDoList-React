@@ -9,13 +9,12 @@ const Todo = props =>
 return(
    
     
-    <li className="todo-item-container d-flex flex-column">
-    <input type="checkbox" className="checkbox-input" />
-        
-        <div className = "d-flex flex-row label-container">
-        
-         
-          <label for="checkboxInput" className="checkbox-label">{text}
+    <li className="do-item-container d-flex flex-column">
+    <div><input type="checkbox" className="checkbox-input" />
+    </div>
+    
+    <div className = "d-flex flex-row label-container">
+        <label for="checkboxInput" className="checkbox-label">{text}
           </label>
           <button className="deletebtn">Delete</button>
             
