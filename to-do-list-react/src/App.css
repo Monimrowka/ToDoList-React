@@ -1,11 +1,11 @@
 
 
-.todos-bg-container {
+.dos-bg-container {
   background-color: #f9fbfe;
   height: 100vh;
 }
 
-.todos-heading {
+.dos-heading {
   text-align: center;
   font-family: "Roboto";
   font-size: 46px;
@@ -26,28 +26,28 @@
   font-weight: 500;
 }
 
-.todo-items-heading {
+.do-items-heading {
   font-family: "Roboto";
   font-size: 32px;
   font-weight: 700;
 }
 
-.todo-items-heading-subpart {
+.do-items-heading-subpart {
   font-family: "Roboto";
   font-size: 32px;
   font-weight: 500;
 }
 
-.todo-items-container {
+.do-items-container {
   margin: 0px;
   padding: 0px;
 }
 
-.todo-item-container {
+.do-item-container {
   margin-top: 15px;
 }
 
-.todo-user-input {
+.do-user-input {
   background-color: white;
   
   border-style: solid;
@@ -57,7 +57,7 @@
   margin-top: 10px;
   padding: 15px;
 }
-.add-todo-button{
+.add-do-button{
 
   margin-left: 20px;
 }
