@@ -1,6 +1,6 @@
 import './App.css';
 import Todo from './Component/Todo';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 let doList = [
   {
@@ -20,11 +20,11 @@ let doList = [
 ];
 
 
- function App() {
-  const addfn =() =>
-  {  
 
-  }
+ function App() {
+
+  
+  
   return (
     <>
      <div className="dos-bg-container">
@@ -33,7 +33,7 @@ let doList = [
             Create <span className="create-task-heading-subpart">Task</span>
           </h1>
           <input type="text" id="doUserInput" className="todo-user-input" />
-          <button className="add-do-button" onClick={addfn}>Add</button>
+          <button className="add-do-button" >Add</button>
           <h1 className="do-items-heading">
             My <span className="do-items-heading-subpart">Tasks</span>
           </h1>
