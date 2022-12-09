@@ -1,40 +1,45 @@
 
 
-.todos-bg-container {
-  background-color: #f9fbfe;
-  height: 100vh;
+.container {
+  background: linear-gradient(to right, rgb(91, 91, 212), rgb(111, 213, 111));
+  height: 650px;
+  width: 500px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 0px 3rem;
+  overflow: hidden;
 }
 
 .todos-heading {
   text-align: center;
   font-family: "Roboto";
-  font-size: 46px;
+  font-size: 40px;
   font-weight: 500;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .create-task-heading {
   font-family: "Roboto";
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 700;
 }
 
 .create-task-heading-subpart {
   font-family: "Roboto";
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 500;
 }
 
 .todo-items-heading {
   font-family: "Roboto";
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 700;
 }
 
 .todo-items-heading-subpart {
   font-family: "Roboto";
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 500;
 }
 
@@ -60,4 +65,45 @@
 .add-todo-button{
 
   margin-left: 20px;
+}
+
+/* Aroj CSS styles*/
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
+  padding-top: 10px;
+  gap: 2rem;
+}
+
+.typeItems {
+  width: 455px;
+}
+
+.itemsContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.iconsContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 0.3rem;
+  margin-left: auto;
+  margin-top: 1rem;
+  width: 20%;
+  height: 1.5rem;
+}
+
+.foot{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  transform: translateY(-2rem);
+
 }
