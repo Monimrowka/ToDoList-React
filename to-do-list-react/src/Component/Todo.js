@@ -1,23 +1,21 @@
 import React from 'react';
-import List from './List'
-function Todo()
-{
 
-return(
-   
-    <div>
-    <li className="todo-item-container d-flex flex-column"></li>
-    <List />
+function Todo({toDos, deleteItemProp}){
 
-    </div>
-        
-   
-);
+    const deleteItem = (event)=>{
+        deleteItemProp(toDos)
+    }
+    return(
+        <div className='itemsContainer'>
+            <input type="checkbox"></input>
+            <p>{toDos.newTypedInput}</p>
+            <div className='iconsContainer'>
+                <button>Edit</button>
+                <button>Save</button>
+                <button onClick={deleteItem}>Delete</button>
+            </div>
+        </div>
+    )
 }
-
-
-
-
-
 
 export default Todo;
