@@ -107,3 +107,9 @@
   transform: translateY(-2rem);
 
 }
+
+button {
+  background-color: rgb(161, 161, 224);
+  border-radius: 30%;
+  border: 0px;
+}
