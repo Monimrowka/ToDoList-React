@@ -2,21 +2,21 @@ import React, { useState } from "react";
 
 function InputAdd({newToDoInput}) {
 
-        {/* Step 3: When the new text is typed and stored in one state, the add button !should grab the value from that state to push into a new state.
+        /* Step 3: When the new text is typed and stored in one state, the add button !should grab the value from that state to push into a new state.
             For this purpose, useState is used. It is a react hook that adds a state variable to the component. It comes as 
-            const [variable, setter-function-for-the-variable] = useState(initialState). Here, an empty text ("") is assigned for the initial state of the text field value */}
+            const [variable, setter-function-for-the-variable] = useState(initialState). Here, an empty text ("") is assigned for the initial state of the text field value */
   const [newTypedInput, setNewTypedInput] = useState("");
 
+        /* Step 5: */
   const addItemOnClick = () => {
     if(newTypedInput === ""){
       alert("type relevant to-do item before you proceed")
     } else {
     newToDoInput({
-      newTypedInput,
-      id:(new Date).getTime()
+      id:(new Date()).getTime(), newTypedInput
     })
   }
-    // reset the item with an empty input value
+    /*  reset the item with an empty input value */
     setNewTypedInput("");
 }
 
@@ -37,7 +37,7 @@ function InputAdd({newToDoInput}) {
                 state by clicking the add button, see step 3 */
         onChange={(event) => {
           setNewTypedInput(event.target.value);
-          console.log(event.target.value);
+          // console.log(event.target.value);
         }}
       />
         {/* Step 4: When the user clicks the Add button, the add button !should grab the value from that state, and to push into a new state. It means, from
